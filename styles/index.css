@@ -1,0 +1,39 @@
+:root {
+    --text-color: red;
+    --default-text-color: white;
+}
+
+body {
+    background-color: #000;
+}
+
+#text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--default-text-color);
+}
+
+#image {
+    position: absolute;
+    display: none;
+}
+
+.colorized {
+    animation: text-animation 1s ease-in-out;
+}
+
+@keyframes text-animation {
+    0% {
+        color: var(--default-text-color);
+        transform: scale(1);
+    }
+    50% {
+        color: var(--text-color);
+        transform: scale(1.1);
+    }
+    100% {
+        color: var(--default-text-color);
+        transform: scale(1);
+    }
+}
