@@ -1,49 +1,49 @@
-const TWITCH_ACCESS_TOKEN = "<ENTER_YOUR_TWITCH_ACCESS_TOKEN>";
-const TWITCH_CLIENT_ID = "<ENTER_YOUR_TWITCH_CLIENT_ID>";
-const TWITCH_BROADCASTER_ID = "<ENTER_YOUR_TWITCH_BROADCASTER_ID>";
+const TWITCH_ACCESS_TOKEN = "cdrgweu4jm1m0qezz241rf6v0nbs6s"; //"<ENTER_YOUR_TWITCH_ACCESS_TOKEN>";
+const TWITCH_CLIENT_ID = "gp762nuuoqcoxypju8c569th9wz7q5"; //"<ENTER_YOUR_TWITCH_CLIENT_ID>";
+const TWITCH_BROADCASTER_ID = "107968853";
 
 let sub_count = 3000; // initialized with twitch api
-const sub_goal = 3100;
+let queue = [];
 
 const datas = [
     {
         month: 60,
-        image: "./images/challenger.png",
+        image: "images/webp/challenger.webp",
         color: "gold",
     },
     {
         month: 48,
-        image: "./images/grandmaster.png",
-        color: "#7d4083",
+        image: "images/webp/grandmaster.webp",
+        color: "#bd2129",
     },
     {
         month: 36,
-        image: "./images/master.png",
-        color: "#c5232b",
+        image: "images/webp/master.webp",
+        color: "#9c529c",
     },
     {
         month: 24,
-        image: "./images/diamond.png",
-        color: "#2937d5",
+        image: "images/webp/diamond.webp",
+        color: "#3973bd",
     },
     {
         month: 12,
-        image: "./images/platinum.gif",
-        color: "#42c9c0",
+        image: "images/webp/platinum.webp",
+        color: "#4a9c9d",
     },
     {
         month: 6,
-        image: "./images/gold.gif",
-        color: "#ffff9f",
+        image: "images/webp/gold.webp",
+        color: "#e2c75c",
     },
     {
         month: 3,
-        image: "./images/silver.gif",
-        color: "#3f73be",
+        image: "images/webp/silver.webp",
+        color: "#315294",
     },
     {
         month: 1,
-        image: "./images/bronze.gif",
-        color: "#89623b",
+        image: "images/webp/bronze.webp",
+        color: "#9c734a",
     },
 ];

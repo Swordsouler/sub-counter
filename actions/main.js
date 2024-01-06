@@ -1,7 +1,14 @@
 const main = async () => {
-    const sub_count = await getTotalSubCount();
-    console.log(sub_count);
-    setText(sub_count);
+    sub_count = await getTotalSubCount();
+    const countElement = document.getElementById("count");
+    if (!countElement) return;
+    countElement.innerHTML = sub_count;
+    setInterval(() => {
+        // most recent sub
+        const current = queue.shift();
+        if (!current) return;
+        setText(++sub_count, current.username, current.month);
+    }, 6000);
 };
 
 main();
